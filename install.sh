@@ -62,4 +62,14 @@ FLATPAKS=(
     org.gtk.Gtk3theme.adw-gtk3-dark org.gustavoperedo.FontDownloader
     sh.loft.devpod com.heroicgameslauncher.hgl org.prismlauncher.PrismLauncher
     org.blender.Blender org.audacityteam.Audacity org.inkscape.Inkscape
-    org.kde.kdenlive com.github.hugolabe.Wike
+    org.kde.kdenlive com.github.hugolabe.Wike org.kde.kcalc com.slack.Slack
+    com.github.johnfactotum.Foliate org.kde.filelight org.kde.ark
+    org.kde.okular org.mozilla.Thunderbird org.nicotine_plus.Nicotine
+    com.vscodium.codium
+)
+
+flatpak install -y flathub "${FLATPAKS[@]}"
+
+echo "--- Setup Complete! ---"
+echo "To start Tailscale, run: sudo tailscale up"
+echo "Please reboot your system to apply the Testing branch changes."
