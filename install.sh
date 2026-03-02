@@ -42,6 +42,12 @@ wget -O /tmp/steam.deb https://cdn.fastly.steamstatic.com/client/installer/steam
 apt install -y /tmp/steam.deb
 rm /tmp/steam.deb
 
+# 5.5 Download and Install Feishin .deb
+echo "Installing Feishin via .deb..."
+wget -O /tmp/Feishin-linux-amd64.deb https://github.com/jeffvli/feishin/releases/download/v1.6.0/Feishin-linux-amd64.deb
+apt install -y /tmp/Feishin-linux-amd64.deb
+rm /tmp/Feishin-linux-amd64.deb
+
 # 6. Install Materia KDE Theme
 echo "Installing Materia KDE..."
 wget -qO- https://raw.githubusercontent.com/PapirusDevelopmentTeam/materia-kde/master/install.sh | sh
